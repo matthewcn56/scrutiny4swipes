@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Attempt to start server
-        run: yarn start --if-present
+        run: yarn build --if-present
         env:
           CI: true
   build-site:
@@ -40,7 +40,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Attempt to run
-        run: yarn start --if-present
+        run: yarn build --if-present
         env:
           CI: true
             
