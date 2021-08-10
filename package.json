@@ -1,0 +1,16 @@
+{
+  "name": "how-many-swipes-does-ucla-cs-owe-amanda",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/matthewcn56/how-many-swipes-does-ucla-cs-owe-amanda.git",
+  "author": "Matthew Nieva <matthewcn56@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "husky": "^7.0.0"
+  },
+  "scripts": {
+    "prepare": "husky install"
+  }
+}

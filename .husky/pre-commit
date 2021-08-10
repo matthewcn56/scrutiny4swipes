@@ -1,0 +1,16 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+. "$(dirname "$0")/common.sh"
+
+echo "Fixing any formatting issues on staged changes for our site..."
+cd swipes-site
+yarn lint-staged
+echo "Ensuring that server code is compiled to js..."
+cd ..
+cd swipes-server
+yarn build
+echo "Fixing any formatting on staged changes for our server..."
+yarn lint-staged
+echo "Formatting is complete!"
+
+
